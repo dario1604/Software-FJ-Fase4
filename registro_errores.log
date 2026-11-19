@@ -1,0 +1,18 @@
+[2026-11-18 21:17:02] [INFO] Cliente creado: Empresa Alpha
+[2026-11-18 21:17:02] [ERROR] Cliente fallido: Nombre muy corto.
+[2026-11-18 21:17:02] [ERROR] Cliente fallido: Correo inválido.
+[2026-11-18 21:17:02] [ERROR] Servicio fallido: El costo debe ser mayor a 0.
+[2026-11-18 21:17:02] [INFO] Reserva OK: Empresa Alpha - Sala VIP ($178,500)
+[2026-11-18 21:17:02] [WARN] 'Sala VIP' no está disponible.
+[2026-11-18 21:17:02] [INFO] Cancelada: Sala VIP
+[2026-11-18 21:17:02] [ERROR] Validación en reserva: Días inválidos.
+[2026-11-18 21:17:02] [INFO] Cotización especial: $650,000
+[2026-11-18 21:25:06] [INFO] Cliente creado: Empresa Alpha
+[2026-11-18 21:25:06] [ERROR] Cliente fallido: Nombre muy corto.
+[2026-11-18 21:25:06] [ERROR] Cliente fallido: Correo inválido.
+[2026-11-18 21:25:06] [ERROR] Servicio fallido: El costo debe ser mayor a 0.
+[2026-11-18 21:25:06] [INFO] Reserva OK: Empresa Alpha - Sala VIP ($178,500)
+[2026-11-18 21:25:06] [WARN] 'Sala VIP' no está disponible.
+[2026-11-18 21:25:06] [INFO] Cancelada: Sala VIP
+[2026-11-18 21:25:06] [ERROR] Validación en reserva: Días inválidos.
+[2026-11-18 21:25:06] [INFO] Cotización especial: $650,000
