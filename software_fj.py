@@ -126,6 +126,7 @@ except SoftwareFJError as e:
 cotizacion = s3.calcular_costo(duracion=4, iva=0.0, urgencia=50000)
 print(f"Cotización especial Asesoría: ${cotizacion:,.0f}")
 log("INFO", f"Cotización especial: ${cotizacion:,.0f}")
+
 print("=== FIN DE SIMULACIÓN (Revisa registro_errores.log) ===")
        
                 
