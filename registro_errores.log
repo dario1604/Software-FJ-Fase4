@@ -2,7 +2,7 @@
 [2026-11-18 21:17:02] [ERROR] Cliente fallido: Nombre muy corto.
 [2026-11-18 21:17:02] [ERROR] Cliente fallido: Correo inválido.
 [2026-11-18 21:17:02] [ERROR] Servicio fallido: El costo debe ser mayor a 0.
-[2026-11-18 21:17:02] [INFO] Reserva OK: Empresa Alpha - Sala VIP ($178,500)
+[2026-11-18 21:17:02] [INFO] Reserva OK: Empresa Alpha - Salala VIP ($178,500)
 [2026-11-18 21:17:02] [WARN] 'Sala VIP' no está disponible.
 [2026-11-18 21:17:02] [INFO] Cancelada: Sala VIP
 [2026-11-18 21:17:02] [ERROR] Validación en reserva: Días inválidos.
