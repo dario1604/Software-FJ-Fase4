@@ -23,7 +23,7 @@ class Cliente(Entidad):
         if "@" not in correo: raise ValidacionError("Correo inválido.")
         self.__nombre, self.__correo = nombre, correo  # Datos encapsulados (privados)
 
-    def get_nombre(self): return self.__nombre
+    def get_nombre(self): return self.__nomb    
     def detalles(self): return f"Cliente: {self.__nombre} ({self.__correo})"
     
 # 4. Clase abstracta Servicio y 3 servicios especializados (Herencia y Polimorfismo)
