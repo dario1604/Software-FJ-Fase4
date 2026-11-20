@@ -5,7 +5,7 @@ def log(nivel, msg):
     with open("registro_errores.log", "a", encoding="utf-8") as f:
         f.write(f"[{datetime.datetime.now():%Y-%m-%d %H:%M:%S}] [{nivel}] {msg}\n")
         
- # 2. Excepciones personalizadas
+# 2. Excepciones personalizadas
 class SoftwareFJError(Exception): pass
 class ValidacionError(SoftwareFJError): pass
 class NoDisponibleError(SoftwareFJError): pass
@@ -26,14 +26,14 @@ class Cliente(Entidad):
     def get_nombre(self): return self.__nombre
     def detalles(self): return f"Cliente: {self.__nombre} ({self.__correo})"
     
-    # 4. Clase abstracta Servicio y 3 servicios especializados (Herencia y Polimorfismo)
+# 4. Clase abstracta Servicio y 3 servicios especializados (Herencia y Polimorfismo)
 class Servicio(abc.ABC):
     def __init__(self, id_s, nombre, costo):
         if costo <= 0: raise ValidacionError("El costo debe ser mayor a 0.")
         self.id_s, self.nombre, self.costo, self.disponible = id_s, nombre, costo, True
         
     @abc.abstractmethod 
-    def calcular_costo(self, duracion, iva=0.19, extra=0.0): pass  # Sobrecarga con parámetros opcionales
+    def calcular_costo(self, duracion, iva=0.19, extra=0.0): pass  # Uso de parámetros opcionales para variar el cálculo del costo
     @abc.abstractmethod
     def describir(self): pass
 
