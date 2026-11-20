@@ -29,7 +29,7 @@ class Cliente(Entidad):
 # 4. Clase abstracta Servicio y 3 servicios especializados (Herencia y Polimorfismo)
 class Servicio(abc.ABC):
     def __init__(self, id_s, nombre, costo):
-        if costo <= 0: r ValidacionError("El costo debe ser mayor a 0.")
+        if costo <= 0: raise ValidacionError("El costo debe ser mayor a 0.")
         self.id_s, self.nombre, self.costo, self.disponible = id_s, nombre, costo, True
         
     @abc.abstractmethod 
