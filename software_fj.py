@@ -7,8 +7,8 @@ def log(nivel, msg):
         
 # 2. Excepciones personalizadas
 class SoftwareFJError(Exception): pass
-class ValidacionError(SoftwareFJError): pass
-class NoDisponibleError(SoftwareFJError): pass
+class ValidacionError(SoftwareFJError): pass    
+class NoDisponibleError(SoftwareFJError): pass   
 
 # 3. Clase abstracta general y Cliente con encapsulamiento
 class Entidad(abc.ABC):
@@ -25,7 +25,7 @@ class Cliente(Entidad):
 
     def get_nombre(self): return self.__nombre   
     def detalles(self): return f"Cliente: {self.__nombre} ({self.__correo})"
-    
+        
 # 4. Clase abstracta Servicio y 3 servicios especializados (Herencia y Polimorfismo)
 class Servicio(abc.ABC):
     def __init__(self, id_s, nombre, costo):
@@ -40,7 +40,7 @@ class Servicio(abc.ABC):
 class ReservaSala(Servicio):
     def calcular_costo(self, duracion, iva=0.19, descuento=0.0):
         if duracion <= 0: raise ValidacionError("Horas inválidas.")
-        sub = self.costo * duracion
+        sub = self.costo * duracion         
         return sub + (sub * iva) - (sub * descuento)
     def describir(self): return f"Sala: {self.nombre}"
     
@@ -48,9 +48,9 @@ class AlquilerEquipo(Servicio):
     def calcular_costo(self, duracion, iva=0.19, seguro=0.05):
         if duracion <= 0: raise ValidacionError("Días inválidos.")
         sub = self.costo * duracion
-        return sub + (sub * iva) + (sub * seguro)
+        return sub + (sub * iva) + (sub * seguro)       
     def describir(self): return f"Equipo: {self.nombre}"
-
+ 
 class Asesoria(Servicio):
     def calcular_costo(self, duracion, iva=0.19, urgencia=0):
         if duracion <= 0: raise ValidacionError("Horas inválidas.")
